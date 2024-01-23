@@ -19,7 +19,6 @@
 
     <!-- font awosome -->
     <script src="https://kit.fontawesome.com/728f784e86.js" crossorigin="anonymous"></script>
-
     <!-- CSS Style  -->
     <style>
         .font-lato {
@@ -28,15 +27,47 @@
     </style>
 </head>
 
-<body class="font-lato">
+<body class="font-lato overflow-x-hidden">
 
     <header class="container mx-auto">
         <!-- Nav Section  -->
 
-        <div class="navbar bg-[#F85559] my-12 rounded-full">
-            <div class="navbar-start">
+        <div class="navbar lg:bg-[#F85559] lg:my-12 rounded-full">
+            <div class="w-full navbar-start">
+                <!-- mobile view  -->
+                <div class="lg:hidden sm:navbar bg-white w-full flex justify-between items-center h-full">
+                    <div class="flex-1">
+                      <div class="text-xl flex items-center gap-3">
+                        <img src="images/logo.png" alt="">
+                        <h2 class="text-2xl font-extrabold">Fruit Burst</h2>
+                      </div>
+                    </div>
+                    <div class="flex justify-center items-center ">
+                      <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                          <div class="w-10">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mt-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                              </svg>
+                              
+                          </div>
+                        </div>
+                        <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                          <li>
+                            <a class="justify-between">
+                              Profile
+                              <span class="badge">New</span>
+                            </a>
+                          </li>
+                          <li><a>Settings</a></li>
+                          <li><a>Logout</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                <!-- mobile view  -->
                 <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -426,7 +457,7 @@
         <!-- Choose Section  -->
     </main>
     <!-- start footer section  -->
-    <footer class="bg-[#121212] h-[35vh] lg:h-[50vh] p-6">
+    <footer class="bg-[#121212] h-[50vh] lg:h-[50vh] p-6">
         <div class="flex justify-center items-center gap-6 pt-16">
             <img src="images/logo.png" alt="">
             <h2 class="text-white text-4xl">Fruit Burst</h2>
